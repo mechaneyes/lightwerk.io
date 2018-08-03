@@ -1,0 +1,17 @@
+.ctrlBounce {
+    position: relative;
+    width: 60%;
+    height: 500px;
+    margin: 50px auto;
+    background-color: deepskyblue;
+    
+    .dragger {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 25%;
+        background-color: tomato;
+    }
+}
