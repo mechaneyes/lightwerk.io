@@ -16,24 +16,28 @@
 
 
 <script>
+
+
+function annee() {
+    $('.dragger').animate({
+        height: '+=55%'
+    }, 600, 'easeInOutCubic', 
+        function () {
+            $('.dragger').animate({
+                height: '-=55%'
+            }, 600, 'easeOutCubic', 
+                function () {
+                    
+                });
+        });
+};
+
+
+
 $(function() {
 
-    function annee() {
-        $('.dragger').animate({
-            height: '+=55%'
-        }, 600, 'easeInOutCubic', 
-            function () {
-                $('.dragger').animate({
-                    height: '-=55%'
-                }, 800, 'easeOutCubic', 
-                    function () {
-                        
-                    });
-            });
-    };
 
-
-    annee();
+    // annee();
 
 
     // $('.dragger').click( function() {
@@ -53,4 +57,12 @@ $(function() {
 
 
 });
+
+
+
+window.onload = function() {
+    annee();
+}
+
+
 </script>
