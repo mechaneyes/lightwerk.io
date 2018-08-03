@@ -1,0 +1,50 @@
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+
+
+
+
+
+<script>
+$(function() {
+
+
+    // $('.dragger').slideUp({
+    //     duration: 1000, 
+    //     complete: allDone
+    // });
+
+    // function allDone() {
+    //     console.log('donner');
+    // }
+
+    function annee() {
+        $('.dragger').animate({
+            height: '+=55%'
+        }, 2000, 'easeInOutCubic', 
+            function () {
+                $('.dragger').animate({
+                    height: '-=25%'
+                }, 800, 'easeOutCubic', 
+                    function () {
+                        
+                    });
+            });
+    };
+
+    annee();
+
+
+
+});
+</script>
