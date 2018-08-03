@@ -36,14 +36,19 @@ $(function() {
     annee();
 
 
+    // $('.dragger').click( function() {
+    //     $('.dragger')
+    //         .delay(600)
+    //         .queue(function() {
+    //             console.log('annee');
+    //             annee();
+    //         })
+    //         $(this).dequeue();
+    // });
+
+
     $('.dragger').click( function() {
-        $('.dragger')
-            .delay(600)
-            .queue(function() {
-                console.log('annee');
-                annee();
-            })
-            $(this).dequeue();
+        annee();
     });
 
 
